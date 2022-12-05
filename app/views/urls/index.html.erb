@@ -6,8 +6,8 @@
     <div class="row justify-content-center">
         <div class="col-6">
           <%= form_with model: @url do |form| %>
-          <%= form.text_field :name, class: "form-control p-2", placeholder: "Enter your url here" %>
-          <%= form.submit "Create Url", class: "btn btn-outline-success mt-4",id: "create-url-button" %>
+          <%= form.text_field :name, class: "form-control p-3", placeholder: "Enter your url here" %>
+          <%= form.submit "Create Url", class: "btn btn-outline-success mt-4 col-4 p-3",id: "create-url-button" %>
           <% end %>
         
         </div>

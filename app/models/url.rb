@@ -11,7 +11,7 @@ validates :name, format: {with: /\A(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+
   private
 
   def set_slug
-    self.slug = SecureRandom.hex(2) if slug.nil?
+    self.slug = SecureRandom.hex(1) if slug.nil?
   end
 
 
