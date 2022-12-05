@@ -1,5 +1,6 @@
 <% flash.each do |type, msg| %>
-  <div class="alert p-2 mb-4 col-6 <%= "alert-#{flash_html_class(type)}"%>">
-  <%= msg.html_safe %>
+  <div class="alert  mb-4 col-6 p-2 <%= "alert-#{flash_html_class(type)}"%>">
+  <div class="pt-2"><%= msg.html_safe %></div>
+  
   </div>
 <% end %>
